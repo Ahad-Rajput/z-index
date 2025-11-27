@@ -1,69 +1,43 @@
-/* body{
+* {
     box-sizing: border-box;
-} */
+}
 
-.box{
+.box {
     width: 80px;
     height: 100px;
     border: 1px solid black;
     position: absolute;
 }
 
-.wrapper{
+body > div {
     width: 300px;
     height: 350px;
     /* border: 1px solid black; */
-    box-shadow: 5px 5px 3px gray;
+    box-shadow: 0 0 3px 1px gray;
     float: left;
     position: relative;
     margin: 70px;
+    padding: 20px;
 }
 
-#box1{
+.box-type-1 {
     left: 50px;
     top: 100px;
     background-color: rgb(27, 162, 27);
 }
-#box2{
-    left: 100px;
-    top: 150px;
-    background-color: rgb(36, 107, 201);
-    z-index: 1;
-}
-#box3{
-    left: 150px;
-    top: 200px;
-    background-color: rgb(210, 39, 45);
-}
-#box4{
-    left: 50px;
-    top: 100px;
-    background-color: rgb(27, 162, 27);
-    z-index: 1;
-}
-#box5{
+
+.box-type-2 {
     left: 100px;
     top: 150px;
     background-color: rgb(36, 107, 201);
 }
-#box6{
+
+.box-type-3 {
     left: 150px;
     top: 200px;
     background-color: rgb(210, 39, 45);
 }
-#box7{
-    left: 50px;
-    top: 100px;
-    background-color: rgb(27, 162, 27);
-}
-#box8{
-    left: 100px;
-    top: 150px;
-    background-color: rgb(36, 107, 201);
-}
-#box9{
-    left: 150px;
-    top: 200px;
-    background-color: rgb(210, 39, 45);
+
+.on-top {
     z-index: 1;
 }

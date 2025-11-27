@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .parent {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: tomato;
+            flex-direction: row;
+            padding: 25px;
+        }
+
+        .parent>div {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            text-align: center;
+            font-size: 150px;
+        }
+
+        #hero {
+            padding: 25px;
+            width: 100dvw;
+            height: 100vh;
+            display: flex;
+            gap: 25px;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        #hero > div {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: space-evenly;
+        }
+
+        #hero h2 {
+            font-size: 50px;
+        }
+
+        #hero p {
+           font-size: 30px;
+        }
+
+        button {
+            background-color: rgb(40, 40, 40);
+            color: aliceblue;
+            padding: 10px 15px;
+            display: inline-block;
+            font-size: 20px;
+            align-self: self-start;
+            cursor: pointer;
+            transition: box-shadow 0.54s;
+
+            &:hover {
+                box-shadow: 10px 5px 2px 0 rgb(40, 39, 39);
+            }
+        }
+
+        #hero > img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media screen and (width <=692px) {
+            .parent {
+                justify-content: center;
+            }
+
+            div:nth-child(2) {
+                order: 3;
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+
+    <div id="hero">
+        <div>
+            <h2>Hi there</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quidem id. Veritatis quo volupoloremque est blanditiis.</p>
+            <button>Read more</button>
+        </div>
+        <img src="https://i.pinimg.com/736x/c2/88/55/c288553606fcb4193f6df14dc5e06698.jpg" alt="bg-img">
+    </div>
+</body>
+
+</html>
